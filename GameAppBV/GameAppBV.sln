@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31919.166
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAppBV", "GameAppBV\GameAppBV.csproj", "{9DA849B1-0D03-4D9B-ADB7-B6B66310CF6F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GameAppBVTests1", "GameAppBVTests1\GameAppBVTests1.csproj", "{24C5234C-2CFC-4D39-A73B-4E5586911156}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9DA849B1-0D03-4D9B-ADB7-B6B66310CF6F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9DA849B1-0D03-4D9B-ADB7-B6B66310CF6F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9DA849B1-0D03-4D9B-ADB7-B6B66310CF6F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9DA849B1-0D03-4D9B-ADB7-B6B66310CF6F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24C5234C-2CFC-4D39-A73B-4E5586911156}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24C5234C-2CFC-4D39-A73B-4E5586911156}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24C5234C-2CFC-4D39-A73B-4E5586911156}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24C5234C-2CFC-4D39-A73B-4E5586911156}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {08ECB6E8-ECFE-4FA0-B8A2-064E91D6B114}
+	EndGlobalSection
+EndGlobal

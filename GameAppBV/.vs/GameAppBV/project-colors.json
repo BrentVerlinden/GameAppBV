@@ -1,0 +1,21 @@
+{
+  "Version": 1,
+  "ProjectMap": {
+    "9da849b1-0d03-4d9b-adb7-b6b66310cf6f": {
+      "ProjectGuid": "9da849b1-0d03-4d9b-adb7-b6b66310cf6f",
+      "DisplayName": "GameAppBV",
+      "ColorIndex": 0
+    },
+    "3c35ba43-a3ca-4083-8957-9f5eb2a947c4": {
+      "ProjectGuid": "3c35ba43-a3ca-4083-8957-9f5eb2a947c4",
+      "DisplayName": "GameAppBVTests",
+      "ColorIndex": 1
+    },
+    "24c5234c-2cfc-4d39-a73b-4e5586911156": {
+      "ProjectGuid": "24c5234c-2cfc-4d39-a73b-4e5586911156",
+      "DisplayName": "GameAppBVTests1",
+      "ColorIndex": 2
+    }
+  },
+  "NextColorIndex": 3
+}
