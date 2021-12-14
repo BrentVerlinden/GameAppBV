@@ -18,8 +18,8 @@ jobs:
       with:
         dotnet-version: 5.0.x
     - name: Restore dependencies
-      run: dotnet restore GameAppBV/GameAppBVTests1/
+      run: dotnet restore ./GameAppBV/GameAppBVTests1/
     - name: Build
-      run: dotnet build GameAppBV/GameAppBVTests1/ --no-restore
+      run: dotnet build --no-restore ./GameAppBV/GameAppBVTests1/
     - name: Test
-      run: dotnet test GameAppBV/GameAppBVTests1/ --no-build --verbosity normal
+      run: dotnet test --no-build --verbosity normal ./GameAppBV/GameAppBVTests1/
