@@ -20,6 +20,6 @@ jobs:
     - name: Restore dependencies
       run: dotnet restore ./GameAppBV/GameAppBVTests1/
     - name: Build
-      run: dotnet build --no-restore ./GameAppBV/
+      run: dotnet build --no-restore ./GameAppBV/GameAppBV/
     - name: Test
       run: dotnet test --no-build --verbosity normal ./GameAppBV/GameAppBVTests1/
