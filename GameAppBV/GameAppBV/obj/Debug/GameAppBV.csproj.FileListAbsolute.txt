@@ -25,3 +25,4 @@ C:\Users\Brent\Documents\DevOps\GameAppBV\GameAppBV\GameAppBV\bin\Debug\SharpDX.
 C:\Users\Brent\Documents\DevOps\GameAppBV\GameAppBV\GameAppBV\bin\Debug\SharpDX.DXGI.pdb
 C:\Users\Brent\Documents\DevOps\GameAppBV\GameAppBV\GameAppBV\bin\Debug\SharpDX.DXGI.xml
 C:\Users\Brent\Documents\DevOps\GameAppBV\GameAppBV\GameAppBV\obj\Debug\GameAppBV.Forms.Bank.resources
+C:\Users\Brent\Documents\DevOps\GameAppBV\GameAppBV\GameAppBV\obj\Debug\GameAppBV.Forms.Calculator.resources

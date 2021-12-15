@@ -97,7 +97,7 @@ namespace GameAppBV
         private void buttonExtra_Click(object sender, EventArgs e)
         {
             //ActivateButton(sender);
-            OpenChildForm(new Forms.Extra(), sender);
+            OpenChildForm(new Forms.Calculator(), sender);
         }
 
         

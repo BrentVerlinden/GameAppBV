@@ -40,8 +40,8 @@
             this.labelHome = new System.Windows.Forms.Label();
             this.panelDesktop = new System.Windows.Forms.Panel();
             this.label4 = new System.Windows.Forms.Label();
-            this.label3 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.panelHome.SuspendLayout();
             this.panelNav.SuspendLayout();
@@ -92,7 +92,7 @@
             this.buttonExtra.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
             this.buttonExtra.Size = new System.Drawing.Size(186, 57);
             this.buttonExtra.TabIndex = 2;
-            this.buttonExtra.Text = "    Extra";
+            this.buttonExtra.Text = "    Mini Calculator";
             this.buttonExtra.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.buttonExtra.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
             this.buttonExtra.UseVisualStyleBackColor = true;
@@ -197,17 +197,6 @@
             this.label4.TabIndex = 8;
             this.label4.Text = "You can always contact me via e-mail: \"r0843827@student.thomasmore.be\".";
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(73)))), ((int)(((byte)(87)))));
-            this.label3.Location = new System.Drawing.Point(114, 133);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(379, 16);
-            this.label3.TabIndex = 7;
-            this.label3.Text = "This application was made by a student called Brent Verlinden.";
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -218,6 +207,17 @@
             this.label1.Size = new System.Drawing.Size(350, 16);
             this.label1.TabIndex = 6;
             this.label1.Text = "We appreciate that you\'ve decided to use this application.";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(73)))), ((int)(((byte)(87)))));
+            this.label3.Location = new System.Drawing.Point(114, 133);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(379, 16);
+            this.label3.TabIndex = 7;
+            this.label3.Text = "This application was made by a student called Brent Verlinden.";
             // 
             // label2
             // 
