@@ -1,10 +1,10 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props" Condition="Exists('..\packages\MSTest.TestAdapter.2.2.7\build\net45\MSTest.TestAdapter.props')" />
-<MSBuild Projects="@(BuildFile)"
+  <PropertyGroup>
+    <MSBuild Projects="@(BuildFile)"
   Properties="Configuration=%(Config.Configuration);Retries=10;RetryDelayMilliseconds=50"
   Targets="Build" />
-  <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{24C5234C-2CFC-4D39-A73B-4E5586911156}</ProjectGuid>
