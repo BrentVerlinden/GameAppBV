@@ -12,11 +12,13 @@ jobs:
     runs-on: windows-latest
 
     steps:
+    - name: Setup MSbuild
+      uses: microsoft/setup-msbuild@v1.0.0
     - uses: actions/checkout@v2
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.0.x
+        dotnet-version: 4.x.x
     - name: Restore dependencies
       run: dotnet restore ./GameAppBV/GameAppBVTests1/
     - name: Build
