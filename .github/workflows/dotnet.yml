@@ -28,9 +28,9 @@ jobs:
     - name: Install dependencies
       run: dotnet restore "${{ github.workspace }}/GameAppBV/GameAppBV.sln"
       
-    - name: setup-msbuild
-      uses: microsoft/setup-msbuild@v1.1
-      with:
+    #- name: setup-msbuild
+     # uses: microsoft/setup-msbuild@v1.1
+     # with:
     # Folder location of where vswhere.exe is located if a self-hosted agent
         #vswhere-path: # optional
     # Version of Visual Studio to search; defaults to latest if not specified
@@ -38,7 +38,7 @@ jobs:
     # Enable searching for pre-release versions of Visual Studio/MSBuild
        # vs-prerelease: # optional
     # The preferred processor architecture of MSBuild. Can be either "x86" or "x64". "x64" is only available from Visual Studio version 17.0 and later.
-        msbuild-architecture: x64 # optional, default is x86
+       # msbuild-architecture: x64 # optional, default is x86
   
     
   
@@ -50,8 +50,12 @@ jobs:
 
 # $Env:GITHUB_WORKSPACE\GameAppBV\GameAppBV.sln --configuration Release --no-restore
 
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
+
+#dotnet build
     - name: Build
-      run: dotnet build "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
+      run: msbuild "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
     
     - name: Test
       run: |
