@@ -49,8 +49,9 @@ jobs:
            
 
 # $Env:GITHUB_WORKSPACE\GameAppBV\GameAppBV.sln --configuration Release --no-restore
-  #  - name: Build
-    #  run: dotnet build "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
+
+    - name: Build
+      run: dotnet build "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
     
     - name: Test
       run: |
