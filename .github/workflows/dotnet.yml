@@ -55,7 +55,7 @@ jobs:
 
 #dotnet build
     - name: Build
-      run: msbuild "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
+      run: msbuild "${{ github.workspace }}/GameAppBV/GameAppBV.sln" -property:Configuration=Release --no-restore
     
     - name: Test
       run: |
