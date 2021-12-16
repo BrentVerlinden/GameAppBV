@@ -22,15 +22,20 @@ jobs:
    # - name: Setup MSBuild
     #  uses: microsoft/setup-msbuild@v1
 
-    - name: Setup MSBuild.exe
-      uses: warrenbuckley/Setup-MSBuild@v1
-
+ #   - name: Setup MSBuild.exe
+#      uses: warrenbuckley/Setup-MSBuild@v1
     
     - name: Install dependencies
       run: dotnet restore "${{ github.workspace }}/GameAppBV/GameAppBV.sln"
+  
     
-    - name: Build
-      run: dotnet build "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
+  
+    - name: Build DotNET35
+      run: |
+           cd "C:\Program Files (x86)\Microsoft Visual Studio\2022\Enterprise\MSBuild\Current\Bin\"
+           .\MSBuild.exe $Env:GITHUB_WORKSPACE\GameAppBV\GameAppBV.sln --configuration Release --no-restore
+  #  - name: Build
+    #  run: dotnet build "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
     
     - name: Test
       run: |
