@@ -13,13 +13,34 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+
     - name: Setup .NET
       uses: actions/setup-dotnet@v1
       with:
-        dotnet-version: 5.x.x
-    - name: Restore dependencies
-      run: dotnet restore ./GameAppBV/GameAppBVTests1/
+        dotnet-version: 5.0.x
+    
+    - name: Install dependencies
+      run: dotnet restore "${{ github.workspace }}/GameAppBV/GameAppBV.sln"
+    
     - name: Build
-      run: dotnet build --no-restore ./GameAppBV/GameAppBVTests1/GameAppBVTests1.csproj
+      run: dotnet build "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --configuration Release --no-restore
+    
     - name: Test
-      run: dotnet test --no-build --verbosity normal ./GameAppBV/GameAppBVTests1/GameAppBVTests1.csproj
+      run: |
+        dotnet test "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --no-restore --verbosity normal 
+      
+    - name: Publish
+      run: |
+        dotnet publish "${{ github.workspace }}/GameAppBV/src/GameAppBV.csproj" -c Release -o GameAppBV
+    
+    - name: Upload a Build Artifact
+      uses: actions/upload-artifact@v2.2.0
+      with:
+        # Artifact name
+        name: GameAppBVbuildartifacts
+        # A file, directory or wildcard pattern that describes what to upload
+        path: GameAppBV/**
+        # The desired behavior if no files are found using the provided path.
+        if-no-files-found: error
+        # Duration after which artifact will expire in days. 0 means using default retention.
+        retention-days: 90
