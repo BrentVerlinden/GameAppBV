@@ -63,9 +63,9 @@ jobs:
       
       #/GameAppBV/GameAppBV/GameAppBV.csproj
       
-    - name: Publish
-      run: |
-        dotnet publish "${{ github.workspace }}/GameAppBV/GameAppBV/GameAppBV.csproj" -c Release -o GameAppBV
+    #- name: Publish
+     # run: |
+       # dotnet publish "${{ github.workspace }}/GameAppBV/GameAppBV/GameAppBV.csproj" -c Release -o GameAppBV
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.0
