@@ -43,6 +43,7 @@
             this.label1 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
+            this.buttonContact = new System.Windows.Forms.Button();
             this.panelHome.SuspendLayout();
             this.panelNav.SuspendLayout();
             this.panelTitleBar.SuspendLayout();
@@ -52,6 +53,7 @@
             // panelHome
             // 
             this.panelHome.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(57)))), ((int)(((byte)(73)))), ((int)(((byte)(87)))));
+            this.panelHome.Controls.Add(this.buttonContact);
             this.panelHome.Controls.Add(this.buttonPokemon);
             this.panelHome.Controls.Add(this.buttonExtra);
             this.panelHome.Controls.Add(this.buttonBank);
@@ -230,6 +232,24 @@
             this.label2.TabIndex = 5;
             this.label2.Text = "Welcome";
             // 
+            // buttonContact
+            // 
+            this.buttonContact.FlatAppearance.BorderSize = 0;
+            this.buttonContact.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.buttonContact.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.buttonContact.Image = ((System.Drawing.Image)(resources.GetObject("buttonContact.Image")));
+            this.buttonContact.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonContact.Location = new System.Drawing.Point(-4, 290);
+            this.buttonContact.Name = "buttonContact";
+            this.buttonContact.Padding = new System.Windows.Forms.Padding(12, 0, 0, 0);
+            this.buttonContact.Size = new System.Drawing.Size(186, 57);
+            this.buttonContact.TabIndex = 5;
+            this.buttonContact.Text = "    Contact";
+            this.buttonContact.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.buttonContact.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.buttonContact.UseVisualStyleBackColor = true;
+            this.buttonContact.Click += new System.EventHandler(this.buttonContact_Click);
+            // 
             // Home
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -271,6 +291,7 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Button buttonContact;
     }
 }
 

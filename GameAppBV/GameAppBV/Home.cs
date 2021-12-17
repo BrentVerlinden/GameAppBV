@@ -100,6 +100,9 @@ namespace GameAppBV
             OpenChildForm(new Forms.Calculator(), sender);
         }
 
-        
+        private void buttonContact_Click(object sender, EventArgs e)
+        {
+            OpenChildForm(new Forms.Contact(), sender);
+        }
     }
 }
