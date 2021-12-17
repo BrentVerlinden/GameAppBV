@@ -18,37 +18,9 @@ jobs:
       uses: actions/setup-dotnet@v1
       with:
         dotnet-version: 5.0.x
-
-   # - name: Setup MSBuild
-    #  uses: microsoft/setup-msbuild@v1
-
- #   - name: Setup MSBuild.exe
-#      uses: warrenbuckley/Setup-MSBuild@v1
     
     - name: Install dependencies
       run: dotnet restore "${{ github.workspace }}/GameAppBV/GameAppBV.sln"
-      
-    #- name: setup-msbuild
-     # uses: microsoft/setup-msbuild@v1.1
-     # with:
-    # Folder location of where vswhere.exe is located if a self-hosted agent
-        #vswhere-path: # optional
-    # Version of Visual Studio to search; defaults to latest if not specified
-       # vs-version: # optional
-    # Enable searching for pre-release versions of Visual Studio/MSBuild
-       # vs-prerelease: # optional
-    # The preferred processor architecture of MSBuild. Can be either "x86" or "x64". "x64" is only available from Visual Studio version 17.0 and later.
-       # msbuild-architecture: x64 # optional, default is x86
-  
-    
-  
-   # - name: Build DotNet
-    #  run: |
-      #     cd "C:/Program Files/Microsoft Visual Studio/2022/Enterprise/MSBuild/Current/Bin"
-        #   ./MSBuild.exe "${{ github.workspace }}\GameAppBV\GameAppBV.sln" --configuration Release #--no-restore
-           
-
-# $Env:GITHUB_WORKSPACE\GameAppBV\GameAppBV.sln --configuration Release --no-restore
 
     - name: Add msbuild to PATH
       uses: microsoft/setup-msbuild@v1.1
@@ -60,12 +32,6 @@ jobs:
     - name: Test
       run: |
         dotnet test "${{ github.workspace }}/GameAppBV/GameAppBV.sln" --no-restore --verbosity normal 
-      
-      #/GameAppBV/GameAppBV/GameAppBV.csproj
-      
-    #- name: Publish
-     # run: |
-       # dotnet publish "${{ github.workspace }}/GameAppBV/GameAppBV/GameAppBV.csproj" -c Release -o GameAppBV
     
     - name: Upload a Build Artifact
       uses: actions/upload-artifact@v2.2.0
